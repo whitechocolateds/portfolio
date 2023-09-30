@@ -55,7 +55,8 @@ export default {
 }
 .headingContainer img{
   position: relative;
-  top: -1rem
+  top: -1rem;
+  display: inline
 }
 hr.yellow {
   position: relative;
@@ -141,7 +142,7 @@ hr.yellow {
   
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   img{
     width: 80px;
     height: 80px;
@@ -150,6 +151,24 @@ hr.yellow {
     top: 3.5rem;
     width: 100%;
     left: 1rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  img{
+    width: 80px;
+    height: 80px;
+  }
+  hr.yellow{
+    top: 3.5rem;
+    width: 100%;
+    left: 1rem;
+  }
+  .headingContainer img{
+    display: none;
+  }
+  hr.yellow{
+    position: relative;
+    top: 70px
   }
 }
 </style>

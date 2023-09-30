@@ -51,7 +51,7 @@ export default {
   methods: {
     screenCheck() {
       this.windowWidth = window.innerWidth
-      if (this.windowWidth < 750) {
+      if (this.windowWidth < 767) {
         this.mobile = true
         return
       }

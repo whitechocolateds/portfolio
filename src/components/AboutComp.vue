@@ -71,6 +71,7 @@ hr.yellow {
   top: -29px;
   width: 140px;
   height: 140px;
+  display: inline;
 }
 .main{
   display: flex;
@@ -116,7 +117,7 @@ hr.yellow {
   color: yellow;
   text-decoration: none;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   .main{
   display: flex;
   flex-flow: column;
@@ -132,13 +133,52 @@ hr.yellow {
   justify-content: center;
   align-items: center;  
 }
-
-
 .details{
   width: 70%;
-  margin-top: 25px;
+  margin-top: 25px;  
+}
+.myImage{
+  display: none;
+}
+hr.yellow{
+  position: relative ;
+  top: 70px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 320px) {
+  .main{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;  
+  width: 100%;
   
-  
+}
+.aboutMe{
+  width: 100%;
+  position: relative;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+.details{
+  width: 70%;
+  margin-top: 25px;  
+}
+.myImage{
+  display: none;
+}
+hr.yellow{
+  position: relative ;
+  top: 73px;
+  width: 100%;
+}
+.text-white{
+  font-size: x-large;
+  position: relative;
+  left: 10px
+}
 }
 }
 

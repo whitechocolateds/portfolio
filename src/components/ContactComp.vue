@@ -100,7 +100,8 @@ export default {
 }
 .headingContainer img{
   position: relative;
-  top: -1rem
+  top: -1rem;
+  display: inline;
 }
 hr.yellow {
   position: relative;
@@ -138,7 +139,7 @@ hr.yellow {
   
   
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   .card{
   width: 100%;
   margin-top: 40px;
@@ -162,6 +163,36 @@ img{
   }
   .text-white{
     font-size: large;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .card{
+  width: 100%;
+  margin-top: 40px;
+  height: 32rem;
+  
+}
+.textfield{
+  width: 100%;
+  max-width: 100%;
+}
+img{
+    width: 80px;
+    height: 80px;
+    top: 1rem
+  }
+  hr.yellow{
+    position: relative;
+    top: 75px;
+    width: 100%;
+    left: 1rem;
+    
+  }
+  .text-white{
+    font-size: x-large;
+  }
+  .headingContainer img{
+    display: none;
   }
 }
 
